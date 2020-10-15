@@ -34,6 +34,11 @@ function setup() {
 
 function draw() {
   background(road);
+  stroke("Black");
+  fill(0);
+  textSize(30);
+  text("Car Speed :" + Math.round(speed), 50, 370);
+  text("Car Weight :" + Math.round(weight), 300, 370);
   // detecting collision
   if (wall.x - car.x <= (car.width + wall.width) / 2) {
     // calculating deformation
